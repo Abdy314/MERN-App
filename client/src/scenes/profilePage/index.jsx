@@ -2,4 +2,4 @@ const ProfilePage = () => {
     return <div>profilepage</div>;
 };
 
-export default profilePage;
+export default ProfilePage;
