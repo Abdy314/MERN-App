@@ -34,50 +34,17 @@ const PostWidget = ({
   const main = palette.neutral.main;
   const primary = palette.primary.main;
 
-  // const patchLike = async () => {
-  //   const response = await fetch(`http://localhost:3001/posts/${postId}/like`, {
-  //     method: "PATCH",
-  //     headers: {
-  //       Authorization: `Bearer ${token}`,
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({ userId: loggedInUserId }),
-  //   });
-  //   const updatedPost = await response.json();
-  //   dispatch(setPost({ post: updatedPost }));
-  // };
-
   const patchLike = async () => {
-    try {
-      const response = await fetch(`http://localhost:3001/posts/${postId}/like`, {
-        method: "PATCH",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userId: loggedInUserId }),
-      });
-  
-      // Check if response is empty or has status 204 (No Content)
-      if (response.status === 204 || response.body === null) {
-        // Handle case where response is empty
-        console.error('Error liking post: Empty response');
-        // You may want to return or do nothing here
-        return;
-      }
-  
-      // Check if response is successful
-      if (!response.ok) {
-        throw new Error('Failed to like post');
-      }
-  
-      // Parse JSON response
-      const updatedPost = await response.json();
-      dispatch(setPost({ post: updatedPost }));
-    } catch (error) {
-      console.error('Error liking post:', error);
-      // Handle error (e.g., display error message to user)
-    }
+    const response = await fetch(`http://localhost:3001/posts/${postId}/like`, {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userId: loggedInUserId }),
+    });
+    const updatedPost = await response.json();
+    dispatch(setPost({ post: updatedPost }));
   };
 
   return (
