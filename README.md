@@ -1,9 +1,10 @@
-SocioPedia is a Fullstack, interactive web application with the essential features of a social media website. 
-It is constructed using the MERN stack. 
-M - MongoDB
-E - Express.js
-R - React
-N - Node.js
+# Sociopedia
+## SocioPedia is a Fullstack, interactive web application with the essential features of a social media website. 
+## It is constructed using the MERN stack. <br> 
+> M - MongoDB <br>
+> E - Express.js <br>
+> R - React <br>
+> N - Node.js <br>
 
 
 The web app makes use of:
