@@ -15,13 +15,13 @@
 ### > **Redux Toolkit:** State management <br>
 ### > **Redux Persistent:** Local storage <br>
 ### > **React Dropzone:** Image upload <br> <br>
-BACKEND:
- **Node.js:** Runtime <br>
- **Express.js:** Framework <br>
- **Mongoose:** Database <br>
- **JasonWebToken:** Authentication <br>
- **Multer:** File upload.  <br>
+## BACKEND:
+### > **Node.js:** Runtime <br>
+### > **Express.js:** Framework <br>
+### > **Mongoose:** Database <br>
+### > **JasonWebToken:** Authentication <br>
+### > **Multer:** File upload.  <br>
  
-The application is fully functional and works on almost all types of screens.
+## The application is fully functional and works on almost all types of screens.
 
-Below is a demo:
+## Below is a demo:
